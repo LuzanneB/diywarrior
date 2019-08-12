@@ -6,7 +6,7 @@ const projectSchema = new Schema({
   projectname:{ type: String, required: true },
   task: { type: String, required: true },
   budget: { type: Number, required: true },
-  actualSpend: {type: Number, required: false},
+  actualSpend: {type: Number, default:0},
   complete:{type:Boolean, default:false},
   created:{ type: Date, default: Date.now }
 });

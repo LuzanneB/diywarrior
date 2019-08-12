@@ -36,6 +36,13 @@ const projectSeed = [
     task: "Do this tomorrow as well",
     budget: "9.00",
     actualSpend: "0"
+  },
+  {
+    username:"guest",
+    projectname:"Test",
+    task: "Do this tomorrow",
+    budget: "10.00",
+    actualSpend: "0"
   }
 ];
 
