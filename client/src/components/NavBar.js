@@ -6,7 +6,7 @@ function NavBar() {
   return (
     <nav className="navbar navbar-light navbar-expand bg-light navigation-clean">
     <div className="container">
-        <p className="navbar-brand mb-0" id="brand"><i className="fas fa-hammer"></i> DIY Warrior</p>
+        <p className="navbar-brand mb-0" id="brand">DIY Warrior</p>
             <button data-toggle="collapse" className="navbar-toggler" data-target="#navcol-1"></button>
         <div className="collapse navbar-collapse" id="navcol-1"><button className="btn btn-primary ml-auto" type="button"
                 data-toggle="modal" data-target="#login">Sign In</button></div>

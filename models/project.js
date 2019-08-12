@@ -8,7 +8,7 @@ const projectSchema = new Schema({
   budget: { type: Number, required: true },
   actualSpend: {type: Number, required: false},
   complete:{type:Boolean, default:false},
-  created: { type: Date, default: Date.now }
+  created:{ type: Date, default: Date.now }
 });
 
 const Project = mongoose.model("Project", projectSchema);
