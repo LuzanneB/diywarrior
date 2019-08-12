@@ -10,21 +10,29 @@ mongoose.connect(
 
 const projectSeed = [
   {
+    username:"guest",
+    projectname:"Test",
     task: "Do this today",
     budget: "5.00",
     actualSpend: "0"
   },
   {
+    username:"guest",
+    projectname:"Test",
     task: "Do this today as well",
     budget: "6.00",
     actualSpend: "0"
   },
   {
+    username:"guest",
+    projectname:"Test",
     task: "Do this tomorrow",
     budget: "7.00",
     actualSpend: "0"
   },
   {
+    username:"guest",
+    projectname:"Test",
     task: "Do this tomorrow as well",
     budget: "9.00",
     actualSpend: "0"

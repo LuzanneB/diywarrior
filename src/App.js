@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import Overlay from './components/Overlay';
 import Icons from './components/Icons';
 import Footer from './components/Footer'
+import Project from './components/Project';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
    <Overlay />
    <Icons />
    <Footer />
-
+   <Project />
   </div>
   );
 }

@@ -2,6 +2,8 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const projectSchema = new Schema({
+  username:{ type: String, required: true },
+  projectname:{ type: String, required: true },
   task: { type: String, required: true },
   budget: { type: Number, required: true },
   actualSpend: {type: Number, required: false},
