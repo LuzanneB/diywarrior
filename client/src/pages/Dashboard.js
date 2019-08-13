@@ -1,26 +1,12 @@
 import React, {Component} from 'react';
 import Project from '../components/Project';
+import ProjectTask from '../components/ProjectTask';
 // import { Link } from "react-router-dom";
 import API from '../utils/API';
-// import ProjectTask from '../components/ProjectTask';
 
-
-// function Dashboard () {
-//   return (
-//     <Project />
-//   );
-// }
-
-// const projects = [
-//   {_id:1, projectname:"test", task:"do this", budget:500, actualSpend:0, complete:false},
-//   {_id:2, projectname:"test1", task:"do that", budget:500, actualSpend:0, complete:false},
-//   {_id:3, projectname:"test2", task:"do all of it", budget:500, actualSpend:0, complete:false},
-//   {_id:4, projectname:"test3", task:"do more", budget:500, actualSpend:0, complete:false},
-// ];
 
 class Dashboard extends Component {
   state = {
-    // q:'',
     projectBoard:[]
   };
 
@@ -37,28 +23,46 @@ class Dashboard extends Component {
         .catch(err => console.log(err));
   };
   render() {
+    {console.log("This is it yes", this.state.projectBoard)}
     return (
-<div>
-   
+<div>  
      <div>
-      {this.state.projectBoard.map(projects => (
-
-        <Project 
-        projectname ={projects.projectname}
-        task = {projects.task}
-        budget = {projects.budget}
-        id = {projects._id}
-        actualspend = {projects.actualspend}    
-
-        />
-     
-
-        ))}
+      
+        <div>
+          <table className="table table-hover text-center projectTable mx-auto border">
+          <thead>
+           
+                  <tr><Project projectname ={"My First Project"} />
+                  
+                  </tr>
+                  <tr>
+                      <th>ID</th>
+                      <th>Task</th>
+                      <th>Budget</th>
+                      <th>Actual Spend</th>
+                      <th>Edit</th>
+                  </tr>
+              </thead>
+          {this.state.projectBoard.map(project => (
+  
+            
+              <tbody
+                key = {project._id}>     
+                  <ProjectTask
+                  key = {project._id}
+                  task = {project.task}
+                  budget = {project.budget}
+                  id = {project._id}
+                  actualspend = {project.actualspend}    
+                  />
+              </tbody>
+            
+          ))}
+        </table>
+        </div>
+       
     </div>
-    
-    
-
-    </div>
+</div>
 // end retun & render
   )}
   // end component
