@@ -1,19 +1,19 @@
 import axios from "axios";
 
 export default {
-  // Gets all books
+  // Gets all projects
   getProjects: function() {
     return axios.get("/api/projects");
   },
-  // Gets the book with the given id
+  // Gets the project with the given id
   getProject: function(id) {
     return axios.get("/api/projects/" + id);
   },
-  // Deletes the book with the given id
+  // Deletes the project with the given id
   deleteProject: function(id) {
     return axios.delete("/api/projects/" + id);
   },
-  // Saves a book to the database
+  // Saves a task to the database
   saveProject: function(Data) {
     return axios.post("/api/books", projectData);
   }
