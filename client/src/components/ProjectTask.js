@@ -5,10 +5,10 @@ import DoSomething from './DoSomething';
 function ProjectTask() {
     return (
         <tr>
-            <th class= "id" scope="row">ID</th>
-            <td class= "task">demo the kitchen</td>
-            <td class= "budget">$500</td>
-            <td class= "actualSpend">0</td>
+            <th class= "id" scope="row"> id </th>
+            <td class= "task">task</td>
+            <td class= "budget">budget</td>
+            <td class= "actualSpend">actual spend</td>
             <DoSomething />
         </tr>
 

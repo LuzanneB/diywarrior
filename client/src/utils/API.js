@@ -14,7 +14,7 @@ export default {
     return axios.delete("/api/projects/" + id);
   },
   // Saves a task to the database
-  saveProject: function(Data) {
-    return axios.post("/api/books", projectData);
-  }
+  // saveProject: function(Data) {
+  //   return axios.post("/api/books", projectData);
+  // }
 };
