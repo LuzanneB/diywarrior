@@ -4,12 +4,12 @@ import './Project.css';
 import AddTask from './AddTask';
 
 
-function Project(props) {
+function Project() {
     return (
         <table className="table table-hover text-center projectTable mx-auto border">
             <thead>
                 <tr>
-                    <th className="projectName"colspan="5">{props.projectname}<AddTask /></th>
+                    <th className="projectName"colspan="5">projectname<AddTask /></th>
                 </tr>
                 <tr>
                     <th>ID</th>
