@@ -4,9 +4,10 @@
 }
 
 header {
-    height:600px
+    height:600px;
 }
 
-.overlay {
-    opacity: .4;
+header.masthead .overlay {
+    opacity: .45;
+  
 }
