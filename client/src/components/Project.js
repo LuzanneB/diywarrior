@@ -1,7 +1,6 @@
 import React from 'react'
 import './Project.css';
-import AddTask from './AddTask';
-
+import AddTask from './AddTask'
 
 function Project(props) {
     return (

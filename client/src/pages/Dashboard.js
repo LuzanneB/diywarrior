@@ -5,6 +5,7 @@ import ProjectTask from '../components/ProjectTask';
 import API from '../utils/API';
 
 
+
 class Dashboard extends Component {
   state = {
     projectBoard:[]
@@ -22,8 +23,22 @@ class Dashboard extends Component {
         )
         .catch(err => console.log(err));
   };
+
+  handleFormSubmit = event => {
+    event.preventDefault();
+    if (this.state.task && this.state.budget) {
+      API.saveProject({
+        task: this.state.task,
+        budget: this.state.budget,
+        username: "guest",
+        projectname:"buttonadd",
+
+      })
+        .then(res => this.loadProjects())
+        .catch(err => console.log(err));
+    }
+  };
   render() {
-    {console.log("This is it yes", this.state.projectBoard)}
     return (
 <div>  
      <div>
@@ -33,7 +48,7 @@ class Dashboard extends Component {
           <thead>
            
                   <tr><Project projectname ={"My First Project"} />
-                  
+                 
                   </tr>
                   <tr>
                       <th>ID</th>

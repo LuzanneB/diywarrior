@@ -6,6 +6,7 @@ function Footer() {
             <div className="container">
                 <div className="row">
                     <p className="text-muted small mb-4 mb-lg-0">© DIY Warrior 2019 All Rights Reserved.</p>
+                    <a href="https://my.visme.co/projects/z4j91r0x-untitled-project"> What it will be</a>
                 </div>
             </div>
         </footer>
