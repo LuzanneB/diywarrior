@@ -1,6 +1,7 @@
 import React from 'react';
 
-function AddTask() {
+function AddTask (props){
+    
     return (
         // <!-- Button trigger modal -->
         <div>
@@ -22,14 +23,14 @@ function AddTask() {
                             <form>
                                 <div className="form-group">
                                     <label >Task</label>
-                                    <input type="text" className="form-control" id="newTask" aria-describedby="newTask"
-                                        placeholder="Task"></input>
+                                    <input type="text" className="form-control" id="newTask" name="newTask" aria-describedby="newTask"
+                                        placeholder="Task" onChange= {props.changeHandler}></input>
                                 </div>
                                 <div className="form-group">
                                     <label >Budget for Task</label>
-                                    <input type="budget" className="form-control" id="newBudget" placeholder="Budget"></input>
+                                    <input type="budget" className="form-control" id="newBudget" name="newBudget" placeholder="Budget" onChange= {props.changeHandler}> </input>
                                 </div>
-                                <button type="submit" className="btn btn-primary" id="submitTask">Submit</button>
+                                <button type="submit" onClick= {props.handleFormSubmit} className="btn btn-primary" id="submitTask">Submit</button>
                             </form>
                         </div>
                         <div className="modal-footer">

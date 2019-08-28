@@ -4,7 +4,15 @@ import AddTask from './AddTask'
 
 function Project(props) {
     return (
-         <th className="projectName"colSpan="5"> {props.projectname} <AddTask /></th>  
+         <th className="projectName"colSpan="5">
+             {props.projectname} 
+                <AddTask 
+                handleFormSubmit= {props.handleFormSubmit} 
+                changeHandler= {props.changeHandler}
+                newTask = {props.newTask}
+                newBudget = {props.newBudget}
+                />
+        </th>  
     );
 }
 

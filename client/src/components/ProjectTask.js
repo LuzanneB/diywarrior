@@ -9,7 +9,9 @@ function ProjectTask(props) {
             <td className= "task">{props.task}</td>
             <td className= "budget">{props.budget}</td>
             <td className= "actualSpend">{props.actualspend}</td>
-            <DoSomething />
+            <DoSomething 
+                handleComplete={props.handleComplete} 
+            />
         </tr>
 
   
